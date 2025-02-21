@@ -1,29 +1,48 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Link from "next/link";
+import { useState } from "react";
 import styles from "../styles/Home.module.css";
+import DragDrop from '../components/ImageUpload/DragDrop';
+import { uploadImage, generateDescription } from '../utils/api';
+import { ERROR_MESSAGES } from '../utils/constants';
+import Layout from '../components/Layout';
+import Hero from '../components/Home/Hero';
+import UploadSection from '../components/Upload/UploadSection';
+import Features from '../components/Home/Features';
+import HowItWorks from '../components/Home/HowItWorks';
+import FAQ from '../components/Home/FAQ';
+import SEO from '../components/Layout/SEO';
 
-const Home: NextPage = () => {
+const HomePage = () => {
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<string>("");
+  const [error, setError] = useState<string>("");
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Alt Image Generator</title>
-        <meta name="description" content="Alt image generator" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <h1 className={styles.h1}> Alt Image Generator</h1>
-      <p>
-        Send a request to `/api/generate` with `imageUrl` as a query parameter:
-      </p>
-      <Link
-        className={styles.highlight}
-        href="/api/generate?imageUrl=https://dub.sh/confpic"
-      >
-        http://localhost:3000/api/generate?imageUrl=https://dub.sh/confpic
-      </Link>
-    </div>
+    <Layout>
+      <SEO />
+      <Hero />
+      <UploadSection />
+      <Features />
+      <HowItWorks />
+      <FAQ />
+    </Layout>
   );
 };
 
-export default Home;
+export interface GenerateResponse {
+  text: string;
+  error?: string;
+}
+
+export interface UploadResponse {
+  url: string;
+  error?: string;
+}
+
+export interface ImageResult {
+  originalUrl: string;
+  description: string;
+  timestamp: string;
+}
+
+export default HomePage;

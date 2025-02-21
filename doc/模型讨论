@@ -1,0 +1,25 @@
+**Image-to-Prompt核心算法**  
+   - **推荐开源项目**：  
+     - Comfyui-image2prompt（基于Hugging Face的moondream1模型，适配Stable Diffusion）[11](@ref)  
+     - CLIP Interrogator（结合CLIP+BLIP模型，分析图像标签）[未提及但行业常用]  
+       CLIP Interrogator 是一个基于 OpenAI 的 CLIP 和 BLIP 模型的工具，主要用于从图像生成文本描述，特别适合为 AI 绘画工具（如 Stable Diffusion、Midjourney）生成提示词（prompt）
+       以下是其核心功能：
+       图像分析：识别图像中的物体、场景、风格等元素。
+       提示词生成：生成适合 AI 绘画工具的详细提示词。
+       风格匹配：根据图像内容推荐艺术风格（如“赛博朋克”、“水彩画”）。
+         
+         虽然 Hugging Face 上没有官方的 CLIP Interrogator 免费版本，但你可以通过以下方式实现类似功能：
+         。使用 BLIP 模型 作为替代方案。
+         。结合 CLIP + GPT 实现图像描述生成。
+         。使用开源的 CLIP Interrogator 项目，在本地或 Hugging Face Spaces 上部署。
+
+  pixtral-large-2411
+  https://huggingface.co/spaces/pixtral/pixtral-large-2411  要认证
+  microsoft/Florence-2-base
+
+模型	核心能力	           优势	                         典型应用场景
+BLIP	视觉语言联合理解与生成	支持生成任务，数据去噪能力强	图像描述、VQA
+CLIP	图像-文本匹配	       零样本迁移能力强	              图像检索、分类
+SD  	文本到图像生成	       高质量图像生成	              艺术创作、设计辅助
+
+

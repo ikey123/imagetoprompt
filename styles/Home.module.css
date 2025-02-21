@@ -1,23 +1,102 @@
 .container {
-  padding: 0 2rem;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+}
+
+.main {
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  gap: 3rem;
 }
 
-.h1 {
+.title {
+  font-size: 3.5rem;
   text-align: center;
-  font-size: 4rem;
-  margin: 0;
-  padding: 0;
+  background: linear-gradient(45deg, #2563eb, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
 }
 
-.highlight {
-  color: #01e7bf;
-  text-decoration: none;
-  border-bottom: 1px solid #01e7bf;
-  transition: all 0.2s ease-in-out;
+.subtitle {
+  display: block;
+  font-size: 1.5rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+.description {
+  text-align: center;
+  color: #4b5563;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features {
+  color: #6b7280;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.uploadSection {
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.featureCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.featureCard:hover {
+  transform: translateY(-2px);
+}
+
+.result {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+}
+
+.copyButton {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.copyButton:hover {
+  background: #1d4ed8;
+}
+
+.error {
+  color: #dc2626;
+  margin-top: 1rem;
+}
+
+.loading {
+  color: #2563eb;
+  margin-top: 1rem;
 }
