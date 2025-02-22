@@ -15,3 +15,13 @@ export interface PromptResult {
   negativePrompt?: string;
   modelType: AIModel;
 }
+
+export interface ImageResult {
+  description: string;
+  error?: string;
+}
+
+export interface UploadResult {
+  url: string;
+  error?: string;
+}
