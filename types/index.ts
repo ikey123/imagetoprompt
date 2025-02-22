@@ -4,7 +4,7 @@ export interface UploadResponse {
 }
 
 export interface GenerateResponse {
-  text: string;
+  description: string;
   error?: string;
 }
 

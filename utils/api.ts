@@ -11,7 +11,7 @@ export async function generateDescription(imageUrl: string): Promise<GenerateRes
     if (!response.ok) throw new Error(data.error);
     return data;
   } catch (error: any) {
-    return { text: '', error: error.message };
+    return { description: '', error: error.message };
   }
 }
 
