@@ -1,6 +1,6 @@
 import { GetServerSideProps } from 'next';
 
-const EXTERNAL_DATA_URL = 'https://imagetoprompt.com';
+const EXTERNAL_DATA_URL = 'https://imagetoprompt.art';
 
 function generateSiteMap() {
   return `<?xml version="1.0" encoding="UTF-8"?>
