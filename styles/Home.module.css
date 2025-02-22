@@ -105,10 +105,10 @@
   width: 100%;
   max-width: 1200px;
   margin: 1rem auto;
-  padding: 0 2rem;
-  background: white;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 0 clamp(1rem, 5%, 2rem);
+  background: #ffffff;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
 
@@ -116,4 +116,12 @@
   display: block;
   width: 100%;
   border: none;
+  background: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .iframeContainer {
+    margin: 0.5rem auto;
+    border-radius: 1rem;
+  }
 }
