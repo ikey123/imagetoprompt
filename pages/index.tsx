@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
-import DragDrop from '../components/ImageUpload/DragDrop';
-import { uploadImage, generateDescription } from '../utils/api';
+//import DragDrop from '../components/ImageUpload/DragDrop';
+//import { uploadImage, generateDescription } from '../utils/api';
 import { ERROR_MESSAGES } from '../utils/constants';
 import Layout from '../components/Layout';
 import Hero from '../components/Home/Hero';
-import UploadSection from '../components/Upload/UploadSection';
+//import UploadSection from '../components/Upload/UploadSection';
 import Features from '../components/Home/Features';
 import HowItWorks from '../components/Home/HowItWorks';
 import FAQ from '../components/Home/FAQ';
