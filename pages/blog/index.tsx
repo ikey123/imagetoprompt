@@ -5,7 +5,10 @@ import BlogList from '../../components/Blog/BlogList';
 
 const BlogIndex = () => {
   return (
-    <Layout>
+    <Layout
+      title="AI Image to Prompt Generator Guides | Free Tools & Tips for Midjourney, Stable Diffusion"
+      description="Expert guides on using image to prompt generators. Learn how to create perfect AI art prompts for Midjourney & Stable Diffusion. Free tools, tips & tutorials for better prompt engineering."
+    >
       <BlogList 
         categories={[
           'AI Prompt Guides',
