@@ -7,7 +7,7 @@ export default function Features() {
         <h2>The Most Advanced AI Image Prompt Generator</h2>
         <div className={styles.intro}>
           <p>
-            Our AI-powered img2prompt technology helps you generate perfect prompts from any image. Whether you're using Stable Diffusion, Midjourney, or other AI art platforms, our image to prompt generator delivers exceptional results by analyzing every detail of your photos and pictures.
+            Our AI-powered img2prompt technology helps you generate perfect prompts from any image. Whether you&apos;re using Stable Diffusion, Midjourney, or other AI art platforms, our image to prompt generator delivers exceptional results by analyzing every detail of your photos and pictures.
           </p>
         </div>
 

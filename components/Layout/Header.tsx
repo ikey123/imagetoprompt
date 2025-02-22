@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from './Layout.module.css';
 
 export default function Header() {
@@ -15,7 +16,13 @@ export default function Header() {
       <header className={styles.header}>
         <nav>
           <Link href="/" className={styles.logo}>
-            <img src="/logo.svg" alt="Image to Prompt" className={styles.logoIcon} />
+            <Image 
+              src="/logo.svg" 
+              alt="Image to Prompt" 
+              className={styles.logoIcon}
+              width={32}
+              height={32}
+            />
             <span>Image to Prompt</span>
           </Link>
           {/* 第二期再添加这些链接 */}

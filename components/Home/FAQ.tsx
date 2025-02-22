@@ -19,7 +19,7 @@ export default function FAQ() {
         </div>
         <div className={styles.faqItem}>
           <h3>What image formats are supported?</h3>
-          <p>Our img to prompt service supports all common image formats including JPG, PNG, and WebP. Whether you're using photo to prompt or picture to prompt features, you can upload files up to 5MB in size.</p>
+          <p>Our img to prompt service supports all common image formats including JPG, PNG, and WebP. Whether you&apos;re using photo to prompt or picture to prompt features, you can upload files up to 5MB in size.</p>
         </div>
         <div className={styles.faqItem}>
           <h3>How accurate are the generated prompts?</h3>
