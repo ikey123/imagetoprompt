@@ -34,22 +34,22 @@ export default function Features() {
             <div className={styles.benefitCard}>
               <span className={styles.benefitIcon}>🚀</span>
               <h3>Advanced Technology</h3>
-              <p>State-of-the-art prompt generation technology powered by advanced AI models</p>
+              <p>State-of-the-art prompt generation technology powered by advanced AI models.</p>
             </div>
             <div className={styles.benefitCard}>
               <span className={styles.benefitIcon}>🎨</span>
               <h3>Multi-Platform Support</h3>
-              <p>Optimized prompts for all major AI art platforms including Midjourney and Stable Diffusion</p>
+              <p>Optimized prompts for all major AI art platforms including Midjourney and Stable Diffusion.</p>
             </div>
             <div className={styles.benefitCard}>
               <span className={styles.benefitIcon}>💡</span>
               <h3>Professional Analysis</h3>
-              <p>Industry-leading image analysis capabilities for accurate prompt generation</p>
+              <p>Industry-leading image analysis capabilities for accurate prompt generation.</p>
             </div>
             <div className={styles.benefitCard}>
               <span className={styles.benefitIcon}>⚡</span>
               <h3>Regular Updates</h3>
-              <p>Continuous improvements and updates to enhance your creative workflow</p>
+              <p>Continuous improvements and updates to enhance your creative workflow.</p>
             </div>
           </div>
         </div>
