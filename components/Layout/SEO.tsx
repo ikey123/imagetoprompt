@@ -7,9 +7,9 @@ interface SEOProps {
 }
 
 export default function SEO({ 
-  title = "Image to Prompt Generator | AI Prompt Generator",
-  description = "Convert any image to AI prompts for free. Best image to prompt generator for Stable Diffusion, Midjourney. Instant results, no signup required.",
-  keywords = "image to prompt, ai prompt generator, img to prompt, free image to prompt generator"
+  title = "Image to Prompt Generator: Img to Prompt for AI Art",
+  description = "Image, photo & img to prompt with free AI generator. Best image to prompt generator for Stable Diffusion, Midjourney & more.",
+  keywords = "image to prompt"
 }: SEOProps) {
   return (
     <Head>

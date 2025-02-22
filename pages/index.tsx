@@ -21,7 +21,15 @@ const HomePage = () => {
     <Layout>
       <SEO />
       <Hero />
-      <UploadSection />
+      <div className={styles.iframeContainer}>
+        <iframe
+          src="https://nymbo-image-to-prompt.hf.space"
+          frameBorder="0"
+          width="850"
+          height="450"
+          title="Image to Prompt"
+        />
+      </div>
       <Features />
       <HowItWorks />
       <FAQ />

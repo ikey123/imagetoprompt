@@ -1,12 +1,13 @@
-.container {
-  min-height: 100vh;
+.layout {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .main {
   flex: 1;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -24,10 +25,18 @@
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #2563eb;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
+  color: #1f2937;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
 }
 
 .links {
@@ -47,33 +56,57 @@
 
 .footer {
   background: white;
-  border-top: 1px solid #eaeaea;
-  padding: 2rem;
+  border-top: 1px solid #e5e7eb;
+  padding: 1rem 0;
+  margin-top: auto;
 }
 
-.footer .content {
+.footer .container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.copyright {
-  color: #6b7280;
+  padding: 0 2rem;
 }
 
 .footer .links {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.footer .links a {
-  color: #6b7280;
+.footer .link {
+  color: #4b5563;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.footer .links a:hover {
+.footer .link:hover {
   color: #2563eb;
+}
+
+.footer .kofi {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4b5563;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: #f3f4f6;
+  transition: all 0.2s;
+}
+
+.footer .kofi:hover {
+  background: #e5e7eb;
+  color: #2563eb;
+}
+
+.footer .kofi span {
+  font-size: 1.2rem;
+}
+
+.footer .copyright {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
 } 

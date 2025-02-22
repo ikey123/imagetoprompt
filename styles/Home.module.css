@@ -100,3 +100,20 @@
   color: #2563eb;
   margin-top: 1rem;
 }
+
+.iframeContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 0 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.iframeContainer iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
