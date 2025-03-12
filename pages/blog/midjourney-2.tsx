@@ -20,7 +20,7 @@ const Midjourney2 = () => {
         </p>
         <ul>
           <li>Use descriptive language that captures the essence of the image.</li>
-          <li>Incorporate relevant keywords to enhance the prompt&apos;s effectiveness.</li>
+          <li>Incorporate relevant keywords to enhance the prompt effectiveness.</li>
           <li>Experiment with different styles and formats to see what works best.</li>
         </ul>
         <p>
