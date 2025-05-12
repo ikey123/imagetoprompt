@@ -23,7 +23,7 @@ const HomePage = () => {
       <Hero />
       <div className={styles.iframeContainer}>
         <iframe
-          src="https://nymbo-image-to-prompt.hf.space"
+          src="https://ovi054-image-to-prompt.hf.space"
           frameBorder="0"
           width="850"
           height="450"
